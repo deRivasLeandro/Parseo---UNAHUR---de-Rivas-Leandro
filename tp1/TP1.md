@@ -98,3 +98,5 @@ mindmap
       "Alto nivel"
       "Bajo nivel"
       "Intermedios"
+
+Link a Mermaid: https://www.mermaidchart.com/app/projects/ce7befff-14ab-49aa-bde9-41ec8ad8fd5e/diagrams/f3979dee-a91a-4e87-9dd1-a4edfe7774fd/version/v0.1/edit
