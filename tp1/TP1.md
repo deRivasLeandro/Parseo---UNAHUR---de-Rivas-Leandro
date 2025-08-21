@@ -1,3 +1,5 @@
+Código fuente de para Mermaid:
+
 mindmap
   root((Traductores y Compiladores))
     Introducción
