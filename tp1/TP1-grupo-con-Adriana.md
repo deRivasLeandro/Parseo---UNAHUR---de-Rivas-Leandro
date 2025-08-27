@@ -18,7 +18,7 @@ flowchart TD
     %% Compilador
     n11 --> n18["Fuente alto nivel → Objeto bajo nivel"] & n19["Ejecución rápida"] & n20["Analiza todo el programa"]
     n11 --> n24["Genera ejecutable binario"]
-    n11 --> n25(["Ejemplo histórico: Grace Hopper (A-0, 1951)"])
+    n11 --> n25(["Ejemplo histórico: Grace Hopper (A-0, 1951) desarrolla el primer compilador"])
 
     %% Diferencias
     A --> n26["Diferencias"]
