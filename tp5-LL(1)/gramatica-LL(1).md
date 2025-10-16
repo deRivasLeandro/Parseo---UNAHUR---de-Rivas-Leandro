@@ -66,14 +66,16 @@ Se trabaja sobre la cadena `INICIO x = 1; FIN`:
 
 5) Verificación LL(1):
 
-programa → ∩ = {}  
-bloque → ∩ = {}  
-definiciones_funcion → ∩ = {}  
-sentencias → {x} ∩ {FIN} = {}  
-sentencia → ∩ = {}  
-asignacion → ∩ = {}  
-variable → ∩ = {}  
-valor → ∩ = {}  
-numero → ∩ = {}
+| VERIF                         |
+| --                            |
+| programa → ∩ = {}             |
+| bloque → ∩ = {}               |
+| definiciones_funcion → ∩ = {} | 
+| sentencias → {x} ∩ {FIN} = {} |
+| sentencia → ∩ = {}            |
+| asignacion → ∩ = {}           |
+| variable → ∩ = {}             |
+| valor → ∩ = {}                |
+| numero → ∩ = {}               |
 
 * Es LL(1)
