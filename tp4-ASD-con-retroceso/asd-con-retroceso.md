@@ -2,22 +2,22 @@
 
 GIC = < ΣN, ΣT, S, P >
 
-ΣN = { <programa>, <bloque>, <definiciones_funcion>, <sentencias>, <sentencia>, <asignacion>, <variable>, <valor>, <numero> }
+ΣN = { `<programa>`, `<bloque>`, `<definiciones_funcion>`, `<sentencias>`, `<sentencia>`, `<asignacion>`, `<variable>`, `<valor>`, `<numero>` }
 
 ΣT = { INICIO, FIN, x (IDENT), =, 1 (NUMERO), ; }
 
-S = <programa>
+S = `<programa>`
 
-P = (1)  <programa>               ::= INICIO <bloque> FIN
-    (2)  <bloque>                 ::= <definiciones_funcion> <sentencias>
-    (3)  <definiciones_funcion>   ::= λ
-    (4)  <sentencias>             ::= <sentencia> <sentencias>
-    (5)  <sentencia>              ::= <asignacion> ";"
-    (6)  <asignacion>             ::= <variable> "=" <valor>
-    (7)  <variable>               ::= x
-    (8)  <valor>                  ::= <numero>
-    (9)  <numero>                 ::= 1
-    (10) <sentencias>             ::= λ
+P = (1)  `<programa>`               ::= INICIO `<bloque>` FIN
+    (2)  `<bloque>`                 ::= `<definiciones_funcion>` `<sentencias>`
+    (3)  `<definiciones_funcion>`   ::= λ
+    (4)  `<sentencias>`             ::= `<sentencia>` `<sentencias>`
+    (5)  `<sentencia>`              ::= `<asignacion>` ";"
+    (6)  `<asignacion>`             ::= `<variable>` "=" `<valor>`
+    (7)  `<variable>`               ::= x
+    (8)  `<valor>`                  ::= `<numero>`
+    (9)  `<numero>`                 ::= 1
+    (10) `<sentencias>`             ::= λ
 
 2) PDA — transiciones δ (estilo ejemplo)
 
@@ -31,24 +31,24 @@ Las transiciones se escriben como:
 Transiciones de inicialización y expansión de axioma:
 
 δ(q0, λ, λ)                    => (q1, Z)
-δ(q1, λ, λ)                    => (q2, <programa>)
+δ(q1, λ, λ)                    => (q2, `<programa>`)
 
 
 Expansiones (cuando en tope hay un no terminal lo expandimos empujando el RHS):
 
-δ(q2, λ, <programa>)           => (q2, INICIO <bloque> FIN)
+δ(q2, λ, `<programa>`)           => (q2, INICIO `<bloque>` FIN)
 
-δ(q2, λ, <bloque>)             => (q2, <definiciones_funcion> <sentencias>)
-δ(q2, λ, <definiciones_funcion>)=> (q2, λ)                      ; producción (3)
+δ(q2, λ, `<bloque>`)             => (q2, `<definiciones_funcion>` `<sentencias>`)
+δ(q2, λ, `<definiciones_funcion>`)=> (q2, λ)                      ; producción (3)
 
-δ(q2, λ, <sentencias>)         => (q2, <sentencia> <sentencias>) ; producción (4)
-δ(q2, λ, <sentencias>)         => (q2, λ)                        ; producción (10) alternativa
+δ(q2, λ, `<sentencias>`)         => (q2, `<sentencia>` `<sentencias>`) ; producción (4)
+δ(q2, λ, `<sentencias>`)         => (q2, λ)                        ; producción (10) alternativa
 
-δ(q2, λ, <sentencia>)          => (q2, <asignacion> ;)
-δ(q2, λ, <asignacion>)         => (q2, <variable> = <valor>)     ; producción (6)
-δ(q2, λ, <variable>)           => (q1, x)                        ; producción (7) - empuja terminal x
-δ(q2, λ, <valor>)              => (q2, <numero>)
-δ(q2, λ, <numero>)             => (q2, 1)                        ; producción (9) - empuja terminal 1
+δ(q2, λ, `<sentencia>`)          => (q2, `<asignacion>` ;)
+δ(q2, λ, `<asignacion>`)         => (q2, `<variable>` = `<valor>`)     ; producción (6)
+δ(q2, λ, `<variable>`)           => (q1, x)                        ; producción (7) - empuja terminal x
+δ(q2, λ, `<valor>`)              => (q2, `<numero>`)
+δ(q2, λ, `<numero>`)             => (q2, 1)                        ; producción (9) - empuja terminal 1
 
 
 Transiciones de consumo de terminales (cuando el tope coincide con token actual):
