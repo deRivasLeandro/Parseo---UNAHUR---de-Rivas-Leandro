@@ -39,11 +39,3 @@ FIN
 ### 3) Se procesa la línea 3
 
 La última línea del programa marca el cierre (`FIN`), por lo tanto ya no se necesitan ni la **TT** ni la **TS**, y pueden ser eliminadas.
-
----
-
-> 🧠 **Notas de corrección y consistencia:**
-> - Cambié `car` → `char`, que es la denominación estándar del tipo base.  
-> - Mantuve `Ámbito = 0` como el global.  
-> - La variable `x` correctamente apunta a `Tipo = 0`, correspondiente a `int` en la TT.  
-> - `NumPar` y `ListaPar` permanecen con valores nulos ya que `x` no es función.  
