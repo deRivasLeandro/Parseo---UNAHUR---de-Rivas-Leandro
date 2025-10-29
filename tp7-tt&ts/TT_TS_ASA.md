@@ -44,6 +44,7 @@ La última línea del programa marca el cierre (`FIN`), por lo tanto ya no se ne
 
 # Ejemplo más elaborado
 
+```
 INICIO
   X NUM;
   X = 7;
@@ -53,6 +54,7 @@ INICIO
     IMPRIMIR 'N';
   FINSI;
 FIN
+```
 
 ---
 
