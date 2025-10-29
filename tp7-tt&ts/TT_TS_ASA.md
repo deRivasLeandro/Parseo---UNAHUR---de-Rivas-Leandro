@@ -40,6 +40,8 @@ FIN
 
 La última línea del programa marca el cierre (`FIN`), por lo tanto ya no se necesitan ni la **TT** ni la **TS**, y pueden ser eliminadas.
 
+---
+
 # Ejemplo más elaborado
 
 INICIO
@@ -154,4 +156,5 @@ Al leer la línea 10 (`FINSI`) se sale del ámbito 2, volviendo al ámbito 0.
 ### 8) Se procesa la línea 11
 
 La última línea del programa marca el cierre (`FIN`), por lo tanto ya no se necesitan ni la **TT** ni la **TS**, y pueden ser eliminadas.
+
 ---
