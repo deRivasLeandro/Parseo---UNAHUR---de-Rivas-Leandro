@@ -1,4 +1,4 @@
-Es importante considerar que en LDR no se declaran tipos en tiempo de ejecución, así que las únicas entradas nuevas en TT son las declaraciones explícitas de tipos (NUM, CAR, ARR) cuando aparecen.
+### Es importante considerar que en LDR no se declaran tipos en tiempo de ejecución, así que las únicas entradas nuevas en TT son las declaraciones explícitas de tipos (NUM, CAR, ARR) cuando aparecen.
 
 #### TT:
 
