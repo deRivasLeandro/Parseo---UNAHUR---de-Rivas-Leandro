@@ -60,16 +60,12 @@ Incluye ejemplos simples y programas complejos.
 
 # 🚀 Cómo correr el parser
 Sobre el directorio './tp-integrador' ingresar el comando
-\`\`\`
-python parser.py
-\`\`\`
+`python parser.py`
 
 ---
 
 # 📌 Requisitos
 Se debe contar con la biblioteca
-\`\`\`
-ply
-\`\`\`
+`ply`
 
 ---
