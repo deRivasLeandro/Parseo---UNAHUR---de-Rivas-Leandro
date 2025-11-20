@@ -7,7 +7,8 @@ FIN
 
 Siempre reemplazamos el primer no terminal de izquierda a derecha.
 
-| cadena de derivacion                          | proxima producción |
+| cadena de derivacion                          | proxima producción    |
+| --                                            |                       |
 | <programa>                                    | <programa> -> INICIO <bloque> FIN |
 | <programa> -> INICIO <bloque> FIN         | <bloque> -> <definiciones_funcion> <sentencias> |
 | INICIO <definiciones_funcion> <sentencias> FIN                       | <definiciones_funcion> -> λ |
@@ -26,7 +27,8 @@ Siempre reemplazamos el primer no terminal de izquierda a derecha.
 
 Siempre reemplazamos el primer no terminal de derecha a izquierda.
 
-| cadena de derivacion | proxima producción |
+| cadena de derivacion  | proxima producción    |
+| --                    |                       |
 | <programa> | <programa> -> INICIO <bloque> FIN |
 | <programa> -> INICIO <bloque> FIN         | <bloque> -> <definiciones_funcion> <sentencias> |
 | <programa> -> INICIO <definiciones_funcion> <sentencias> FIN | <sentencias> -> <sentencia> <sentencias> |
