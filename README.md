@@ -59,7 +59,7 @@ Incluye ejemplos simples y programas complejos.
 ---
 
 # 🚀 Cómo correr el parser
-Sobre el directorio './tp-integrador ingresar el comando
+Sobre el directorio './tp-integrador' ingresar el comando
 \`\`\`
 python parser.py
 \`\`\`
